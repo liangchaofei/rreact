@@ -1,0 +1,68 @@
+{
+  "better-comments.highlightPlainText": true,
+  "better-comments.tags": [
+    {
+      "tag": "sy-log",
+      "color": "#bf2c9f",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "pink",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "sy",
+      "color": "yellow",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "#000",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "!",
+      "color": "#d711ea",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "#9c27b0",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ]
+}
