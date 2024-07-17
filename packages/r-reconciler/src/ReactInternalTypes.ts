@@ -5,6 +5,7 @@ export type Container = Element | Document | DocumentFragment;
 export type FiberRoot = {
   containerInfo: Container;
   current: Fiber;
+  finishedWork: Fiber | null;
 };
 
 export type Fiber = {

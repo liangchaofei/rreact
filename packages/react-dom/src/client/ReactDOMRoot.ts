@@ -12,6 +12,7 @@ function ReactDOMRoot(_internalRoot: FiberRoot) {
 }
 
 ReactDOMRoot.prototype.render = function (children: ReactNodeList) {
+  console.log("children", children);
   updateContainer(children, this._internalRoot);
 };
 

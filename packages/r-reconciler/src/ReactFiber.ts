@@ -51,3 +51,28 @@ function FiberNode(tag: WorkTag, pendingProps: any, key: null | string) {
 
   this.updateQueue = null;
 }
+export function createWorkInProgress(current: Fiber, pendingProps: any): Fiber {
+  let workInProgress = current.alternate;
+  if (workInProgress === null) {
+    workInProgress = createFiber(current.tag, pendingProps, current.key);
+    workInProgress.elementType = current.elementType;
+    workInProgress.type = current.type;
+    workInProgress.stateNode = current.stateNode;
+
+    workInProgress.alternate = current;
+    current.alternate = workInProgress;
+  } else {
+    workInProgress.pendingProps = pendingProps;
+    workInProgress.type = current.type;
+  }
+
+  // workInProgress.child = current.child;
+  // workInProgress.memoizedProps = current.memoizedProps;
+  // workInProgress.memoizedState = current.memoizedState;
+  // workInProgress.updateQueue = current.updateQueue;
+
+  // workInProgress.sibling = current.sibling;
+  // workInProgress.index = current.index;
+
+  return workInProgress;
+}

@@ -27,5 +27,6 @@ export type WorkTag =
   | 25
   | 26
   | 27;
-
+export const FunctionComponent = 0;
 export const HostRoot = 3;
+export const HostComponent = 5;

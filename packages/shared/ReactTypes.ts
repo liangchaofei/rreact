@@ -10,7 +10,7 @@ export type ReactText = string | number;
 
 export type ReactFragment = ReactEmpty | Iterable<ReactNode>;
 
-export type ReactNode = ReactElement | ReactFragment | ReactText;
+export type ReactNode = ReactElement | ReactText | ReactFragment | Element;
 
 export type ReactEmpty = null | void | boolean;
 
