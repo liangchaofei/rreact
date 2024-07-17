@@ -1,5 +1,5 @@
 import type { WorkTag } from "./ReactWorkTags";
-
+import type { Flags } from "./ReactFiberFlags";
 export type Container = Element | Document | DocumentFragment;
 
 export type FiberRoot = {
@@ -57,4 +57,7 @@ export type Fiber = {
 
   // 记录effect
   updateQueue: any;
+
+  // Effect
+  flags: Flags;
 };

@@ -20,5 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "which-react.ts"]
+  "include": ["src", "which-react.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
